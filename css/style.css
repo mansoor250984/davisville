@@ -34,13 +34,14 @@ body{background:#fff; font:300 18px/24px "halyard-text", sans-serif; color:#5050
 .nav ul li{display:inline-block; padding-top:10px; vertical-align:middle;}
 .nav ul li a{display:block; padding:10px 20px; font-size:15.5px; color:#3d3a37; font-weight:300; position:relative; line-height:20px;}
 .nav ul li.active a{text-transform:uppercase; font-size:13px;}
-.nav ul li a:hover, .nav ul li.active a{text-decoration:none; color:#fff; background:#3e3a37;}
+.nav ul li.active a{text-decoration:none; color:#fff; background:#3e3a37;} .nav ul li a:hover{text-decoration:none; color:#fff; background:#b9ac31;}
 .hero{background:#fbf7f6 url(../images/hero.png) no-repeat center bottom; background-size:100%; padding:70px 0; position:relative; min-height:1100px;}
 .hero h1{font:300 64px/64px "freight-text-pro", sans-serif; color:#3d3a37; padding-bottom:30px;}
 .hero h2 span{display:block;}
 .hero h2{font:300 29px/40px "halyard-text", sans-serif; color:#3d3a37; padding-bottom:200px;}
-.whiteSec, .faqSec{padding:130px 0;}
+.whiteSec, .faqSec{padding:100px 0;}
 .pinkBg{background-color:#fbf7f6!important;}
+.blueBg{background-color:#e9f0f2!important;}
 .common h2{font:300 64px/64px "freight-text-pro", sans-serif; color:#3d3a37; padding-bottom:40px;}
 .common p{font:300 26.6px/36px "halyard-text", sans-serif; color:#3d3a37; padding-bottom:20px;}
 .row1 h2, .row2 h2{padding-top:50px;}
@@ -50,7 +51,7 @@ body{background:#fff; font:300 18px/24px "halyard-text", sans-serif; color:#5050
 .btn-link{font:500 16px/25px "halyard-text", sans-serif; color:#a88e77; padding:0;} .btn-link .fa{transition:all 0.3s ease-out 0s;}
 .btn-link:hover{color:#000;} .btn-link:hover .fa{padding-left:15px;}
 
-.teamSec{padding:130px 0;}
+.teamSec{padding:100px 0;}
 .navigation li{display:inline-block; padding:0 15px;}
 .navigation li a{display:block; border-radius:100px; border:2px solid #b9ac31; font-size:16px; text-transform:uppercase; font-weight:500; min-width:200px; text-align:center; padding:12px 10px; color:#b9ac31; letter-spacing:2px;}
 .navigation li a:hover{text-decoration:none;}
@@ -62,7 +63,7 @@ body{background:#fff; font:300 18px/24px "halyard-text", sans-serif; color:#5050
 .team li{padding-top:55px; min-height:380px;}
 .team li h4{font-size:28px; line-height:32px; font-weight:300; color:#231f20; letter-spacing:-1px;}
 .team li h5{font-size:16px; font-weight:500; color:#b9ac31; letter-spacing:1px;}
-.services{background:url(../images/hospital-graphic.png) no-repeat center bottom; padding-bottom:360px;}
+.services{background:url(../images/hospital-graphic.png) no-repeat center bottom; padding-bottom:300px;}
 ul.feature{align-items: center;justify-content: center; }
 ul.feature li{margin-top:45px;}
 ul.feature li .iconx{position:relative; display:block!important; width:165px; height:145px; margin:0 auto 30px;}
@@ -92,7 +93,7 @@ ul.feature li h3 span{display:block;}
 .banner::before{position:absolute; width:100%; height:100%; background:rgba(0,0,0,.6); content:""; display:block;}
 .about-hero{background:url(../images/about-banner.jpg) no-repeat center top;}
 .banner h1{font:300 64px/64px "freight-text-pro", sans-serif; color:#fff;}
-.aboutSec{background:url(../images/hospital-graphic.png) no-repeat center bottom; padding-bottom:350px;}
+.aboutSec{background:url(../images/hospital-graphic.png) no-repeat center bottom; padding-bottom:300px;}
 .aboutSec h2{padding-top:0;}
 .inner-page .teamSec{padding:90px 0;}
 .inner-page .teamSec h2{padding-bottom:80px;}
@@ -117,6 +118,34 @@ ul.feature li h3 span{display:block;}
 .modal-content p{font-size:24px; line-height:34px; padding-bottom:20px;}
 .modal-content .row{justify-content:center; align-items:center;}
 .modal-content button.close{font-size:40px; color:#b9ac31; position:absolute; top:10px; right:20px; z-index:1;}
+.map{width:100%;}
+.contactSec{padding:50px 0;}
+.contactSec h2{padding-bottom:15px;}
+.contactDet{padding:60px 0;}
+.contactDet h3{font:400 16px/18px "sweet_sans_probold", sans-serif; color:#3d3a37; letter-spacing:2px; margin:10px 0 15px;}
+.contactDet p{font:300 18px/24px "halyard-text", sans-serif; color:#3d3a37; letter-spacing:1px; opacity:1; padding:0 0 20px; margin:0;}
+.contactDet a{color:#3d3a37;}
+.contactDet .col-lg-4:nth-child(2){border-left:3px solid #fff;border-right:3px solid #fff;}
+.ico{display:inline-block; padding-bottom:7px;}
+.ico::before{content:"";display:block; width:45px; height:45px;}
+.loc::before{background:url(../images/loc-icon.svg) no-repeat center center;  background-size:cover;}
+.time::before{background:url(../images/time-icon.svg) no-repeat center center;  background-size:cover;}
+.phone::before{background:url(../images/phone-icon.svg) no-repeat center center;  background-size:cover;}
+.formSec{padding:0px 0 100px; position:relative;background:url(../images/line-graphic.svg) no-repeat center center; background-size:100% auto;}
+.form-control{border:0; border-radius:0; text-align:center;font:300 21px/30px "halyard-text", sans-serif; color:#3d3a37; padding:2rem 1rem;}
+.form-control::placeholder{opacity:.5;}
+.appointmentform{padding:30px 0 0; text-align:left; font:300 20px/35px "halyard-text", sans-serif;}
+.appointmentformSec{padding:0 0 0;}
+.custom-control-label{padding:0 0px 0 35px; display:inline-block; }
+.custom-control-label::before, .custom-control-label::after{left:0; width:28px; height:28px; }
+.custom-checkbox .custom-control-label::before{border-radius:0; border:0;}
+.days{display:inline-block; padding-left:15px;}
+.days li{display:inline-block; padding:0 15px 0 0;}
+.appointmentform .label{display:inline-block; font-weight:500; min-width:20%;}
+.times{min-width:75%;}
+.times li{min-width:50%; float:left;}
+.appointmentformSec{padding:30px 0 100px;}
+.appointmentformSec .contactDet{padding:0 0 0;}
 @media only screen and (max-width: 1024px) {
 .header{padding:20px 0;}
 .brand-centered .logo{max-width:200px;}
@@ -143,6 +172,8 @@ ul.feature li h3 span{display:block;}
 .modal-content{padding:30px 10px;}
 .modal-content figure{width:250px; height:250px; margin:0 auto;}
 .aboutSec{padding-bottom:270px;}
+.inner-page .header{padding:20px 0;}
+.appointmentform .width70{width:85%;}
 }
 
 @media only screen and (max-width: 800px) {
@@ -166,6 +197,9 @@ ul.feature li h3 span{display:inline;}
 .modal-content h5{font-size:24px;}
 .modal-content{padding:30px 0px;}
 .modal-content p{font-size:18px; line-height:28px; padding-bottom:10px;}
+.contactDet .col-lg-4:nth-child(2){border:0; padding-top:30px; padding-bottom:30px;}
+.appointmentform .width70{width:100%;}
+.days, .times{padding-left:0; min-width:100%;}
 }
 @media only screen and (max-width: 767px) {
 .faqSec{padding:70px 0;}
@@ -179,6 +213,11 @@ ul.feature{padding-bottom:0;}
 @media only screen and (max-width: 668px) {
 .hero{min-height:650px;}
 .navigation li{display:block; margin:5px auto;}
+.banner{min-height:300px; background-size:cover;}
+.contactDet{padding:30px 0 0;}
+.formSec{background-size:auto 30%;}
+.appointmentformSec{padding:0 0 50px;}
+.map iframe{height:200px;}
 }
 
 @media only screen and (max-width: 600px) {
@@ -194,6 +233,7 @@ ul.feature{padding-bottom:0;}
 
 @media only screen and (max-width: 420px) {
 .hero{min-height:450px;}
+.banner h1{font-size:50px;}
 .hero h1, .common h2{font-size:32px; line-height:38px; padding-bottom:20px;}
 .hero h2{font-size:20px; line-height:26px;}
 .common p{font-size:18px; line-height:26px;}
@@ -201,4 +241,6 @@ ul.feature{padding-bottom:0;}
 .footer p a{font-size:14px;word-wrap: break-word;}
 .services{padding-bottom:180px;}
 .aboutSec{padding-bottom:120px;}
+.banner{min-height:200px;}
+.days li{min-width:31%;}
 }

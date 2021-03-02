@@ -25,30 +25,31 @@ h1, h2{margin:0;}
 body{background:#fff; font:300 18px/24px "halyard-text", sans-serif; color:#505050;}
 .container{max-width:1170px;}
 .header{background:#faf7f5; padding:60px 2%; overflow:hidden;}
-.inner-page .header{background:#fff; padding-bottom:75px;}
+.inner-page .header{background:#fff; padding-bottom:55px;}
 .brand-centered {display: flex;justify-content: center;position: absolute;width: 100%;left: -30px;top: 45px;}
 .brand-centered .logo {display: flex;align-items: center;}
+
 .header .nav{display:block;}
 .header .nav-left{float:left;}
 .header .nav-right{float:right;}
-.nav ul li{display:inline-block; padding-top:10px; vertical-align:middle;}
+.nav ul li{display:inline-block; padding-top:0px; vertical-align:middle;}
 .nav ul li a{display:block; padding:10px 20px; font-size:15.5px; color:#3d3a37; font-weight:300; position:relative; line-height:20px;}
 .nav ul li.active a{text-transform:uppercase; font-size:13px;}
 .nav ul li.active a{text-decoration:none; color:#fff; background:#3e3a37;} .nav ul li a:hover{text-decoration:none; color:#fff; background:#b9ac31;}
-.hero{background:#fbf7f6 url(../images/hero.png) no-repeat center bottom; background-size:100%; padding:70px 0; position:relative; min-height:1100px;}
+.hero{background:#fbf7f6 url(../images/hero.png) no-repeat center bottom; background-size:100%; padding:70px 0; position:relative;}
 .hero h1{font:300 64px/64px "freight-text-pro", sans-serif; color:#3d3a37; padding-bottom:30px;}
 .hero h2 span{display:block;}
-.hero h2{font:300 29px/40px "halyard-text", sans-serif; color:#3d3a37; padding-bottom:200px;}
+.hero h2{font:300 27px/40px "halyard-text", sans-serif; color:#3d3a37; padding-bottom:720px; margin-bottom:0;}
 .whiteSec, .faqSec{padding:100px 0;}
 .pinkBg{background-color:#fbf7f6!important;}
 .blueBg{background-color:#e9f0f2!important;}
-.common h2{font:300 64px/64px "freight-text-pro", sans-serif; color:#3d3a37; padding-bottom:40px;}
-.common p{font:300 26.6px/36px "halyard-text", sans-serif; color:#3d3a37; padding-bottom:20px;}
+.common h2{font:300 27px/37px "freight-text-pro", sans-serif; color:#3d3a37; padding-bottom:40px;}
+.common p{font:300 22px/32px "halyard-text", sans-serif; color:#3d3a37; padding-bottom:20px;}
 .row1 h2, .row2 h2{padding-top:50px;}
 .row1 .col-lg-6:first-child{padding-right:30px;}
 .row2 .col-lg-6:first-child{padding-left:40px;}
 .row2 .col-lg-6:first-child{order:2;}
-.btn-link{font:500 16px/25px "halyard-text", sans-serif; color:#a88e77; padding:0;} .btn-link .fa{transition:all 0.3s ease-out 0s;}
+.btn-link{font:500 16px/25px "halyard-text", sans-serif; color:#a88e77; padding:0; letter-spacing:1.5px;} .btn-link .fa{transition:all 0.3s ease-out 0s;}
 .btn-link:hover{color:#000;} .btn-link:hover .fa{padding-left:15px;}
 
 .teamSec{padding:100px 0;}
@@ -61,7 +62,7 @@ body{background:#fff; font:300 18px/24px "halyard-text", sans-serif; color:#5050
 .team li figure img{transition:all 0.3s ease-out 0s;}
 .team li:hover figure img{transform:rotate(5deg) scale(1.2);}
 .team li{padding-top:55px; min-height:380px;}
-.team li h4{font-size:28px; line-height:32px; font-weight:300; color:#231f20; letter-spacing:-1px;}
+.team li h4{font-size:27px; line-height:32px; font-weight:300; color:#231f20; letter-spacing:-1px;}
 .team li h5{font-size:16px; font-weight:500; color:#b9ac31; letter-spacing:1px;}
 .services{background:url(../images/hospital-graphic.png) no-repeat center bottom; padding-bottom:300px;}
 ul.feature{align-items: center;justify-content: center; }
@@ -72,7 +73,7 @@ ul.feature li .iconx.icon2::after{background:url(../images/icon02.svg) no-repeat
 ul.feature li .iconx.icon3::after{background:url(../images/icon03.svg) no-repeat 0 0; display:block; width:145px; height:145px; content:"";}
 ul.feature li .iconx.icon4::after{background:url(../images/icon04.svg) no-repeat 0 20px; display:block; width:165px; height:145px; content:"";}
 ul.feature li .iconx.icon5::after{background:url(../images/icon05.svg) no-repeat 0 20px; display:block; width:145px; height:145px; content:"";}
-ul.feature li h3{font:500 24px/26px "halyard-text", sans-serif; color:#3d3a37; padding:0;}
+ul.feature li h3{font:500 22px/26px "halyard-text", sans-serif; color:#3d3a37; padding:0;}
 ul.feature li h3 span{display:block;}
 .btn-secondary{background:#83a3af; border-radius:100px; font:500 15px/20px "halyard-text", sans-serif; border:0; padding:20px 35px; letter-spacing:2px;}
 .footer{background:#fff; padding:100px 0 0; text-align:center;}
@@ -146,10 +147,19 @@ ul.feature li h3 span{display:block;}
 .times li{min-width:50%; float:left;}
 .appointmentformSec{padding:30px 0 100px;}
 .appointmentformSec .contactDet{padding:0 0 0;}
+
+@media only screen and (max-width: 3000px) { .hero h2{margin-bottom:90%;}}
+@media only screen and (max-width: 2000px) { .hero h2{margin-bottom:45%;} }
+@media only screen and (max-width: 1850px) { .hero h2{margin-bottom:33%;} }
+@media only screen and (max-width: 1700px) { .hero h2{margin-bottom:25%;} }
+@media only screen and (max-width: 1600px) { .hero h2{margin-bottom:15%;} }
+@media only screen and (max-width: 1500px) { .hero h2{margin-bottom:10%;} }
+@media only screen and (max-width: 1400px) { .hero h2{margin-bottom:0%;} }
 @media only screen and (max-width: 1024px) {
 .header{padding:20px 0;}
 .brand-centered .logo{max-width:200px;}
-.hero{min-height:900px; padding-top:30px;}
+.hero{padding-top:30px;}
+.hero h2{padding-bottom:550px;}
 .brand-centered{width:75%; text-align:left; justify-content:left; left:20px; top:20px;}
 .menu-bar, .nav .fa-times{display:block; cursor:pointer;}
 .nav .navigation-menu{display: none; background:#333; box-shadow:0 -8px 6px 0 #000 inset;}
@@ -164,8 +174,8 @@ ul.feature li h3 span{display:block;}
 .nav ul li a:hover{color:#fff; border:0px; background:#b9ac31;}
 .nav ul li a{font-size:17px;} .nav ul li.active a{font-size:15px;}
 .nav .fa-times{color:#fff; cursor:pointer; float:right; margin:10px;}
-.common h2{font-size:45px; line-height:45px;}
-.common p{font-size:22px; line-height:30px;}
+/*.common h2{font-size:45px; line-height:45px;}
+.common p{font-size:22px; line-height:30px;}*/
 .container{padding:0 30px;}
 .whiteSec, .teamSec{padding:70px 0;}
 .services{padding-bottom:300px;}
@@ -174,6 +184,7 @@ ul.feature li h3 span{display:block;}
 .aboutSec{padding-bottom:270px;}
 .inner-page .header{padding:20px 0;}
 .appointmentform .width70{width:85%;}
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -229,14 +240,18 @@ ul.feature{padding-bottom:0;}
 .card-header::before, .card-body:before{font-size:24px;}
 .card-header::before{padding-top:25px;}
 .md-accordion .card .card-header a .rotate-icon{position:absolute; top:25px; right:0;}
+.common h2{font-size:18px; line-height:28px;}
+.team li h4{font-size:18px; line-height:inherit;}
 }
-
+@media only screen and (max-width: 500px) {
+.hero{min-height:550px;}
+}
 @media only screen and (max-width: 420px) {
 .hero{min-height:450px;}
 .banner h1{font-size:50px;}
-.hero h1, .common h2{font-size:32px; line-height:38px; padding-bottom:20px;}
+.hero h1{font-size:32px; line-height:38px; padding-bottom:20px;}
 .hero h2{font-size:20px; line-height:26px;}
-.common p{font-size:18px; line-height:26px;}
+.common p{font-size:16px; line-height:26px;}
 .row1{padding-bottom:0;} .row2{padding-top:10px;}
 .footer p a{font-size:14px;word-wrap: break-word;}
 .services{padding-bottom:180px;}

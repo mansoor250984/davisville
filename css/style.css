@@ -5,7 +5,7 @@
     font-weight: normal;
     font-style: normal;
 }
-html, body{height:100%;}
+html, body{height:100%; font-variant-numeric: lining-nums;}
 .clear{clear:both; overflow:hidden;}
 html{scroll-behavior: smooth;}
 *{padding:0px; margin:0px; box-sizing: border-box; outline:none; list-style:none;}
@@ -39,13 +39,13 @@ body{background:#fff; font:300 18px/24px "halyard-text", sans-serif; color:#5050
 .hero{background:#fbf7f6 url(../images/hero.png) no-repeat center bottom; background-size:100%; padding:70px 0; position:relative;}
 .hero h1{font:300 64px/64px "freight-text-pro", sans-serif; color:#3d3a37; padding-bottom:30px;}
 .hero h2 span{display:block;}
-.hero h2{font:300 27px/32px "halyard-text", sans-serif; color:#3d3a37; padding-bottom:720px; margin-bottom:0;}
+.hero h2{font:300 20px/36px "halyard-text", sans-serif; color:#3d3a37; padding-bottom:720px; margin-bottom:0;}
 .whiteSec, .faqSec{padding:100px 0;}
 .pinkBg{background-color:#fbf7f6!important;}
 .blueBg{background-color:#e9f0f2!important;}
 .grayBg{background-color:#efefef!important;}
 .common h2{font:300 64px/64px "freight-text-pro", sans-serif; color:#3d3a37; padding-bottom:40px;}
-.common p{font:300 20px/30px "halyard-text", sans-serif; color:#3d3a37; padding-bottom:20px;}
+.common p{font:300 20px/36px "halyard-text", sans-serif; color:#3d3a37; padding-bottom:20px;}
 .row1 h2, .row2 h2{padding-top:50px;}
 .row1 .col-lg-6:first-child{padding-right:30px;}
 .row2 .col-lg-6:first-child{padding-left:40px;}
@@ -56,7 +56,7 @@ body{background:#fff; font:300 18px/24px "halyard-text", sans-serif; color:#5050
 .teamSec{padding:100px 0;}
 .navigation li{display:inline-block; padding:0 15px;}
 .navigation li a{display:block; border-radius:100px; border:2px solid #b9ac31; font-size:16px; text-transform:uppercase; font-weight:500; min-width:200px; text-align:center; padding:12px 10px; color:#b9ac31; letter-spacing:2px;}
-.navigation li a:hover{text-decoration:none;}
+.navigation li a:hover, .navigation li a.active{background:#b9ac31; color:#fff;text-decoration:none;}
 .team {padding-top:30px; align-items: center;justify-content: center;}
 .team figure{width:220px;  height:220px; display:inline-block; overflow:hidden; border-radius:500px; margin-bottom:10px;}
 .team li{cursor:pointer;}
@@ -79,7 +79,7 @@ ul.feature li h3 span{display:block;}
 .btn-secondary{background:#83a3af; border-radius:100px; font:500 15px/20px "halyard-text", sans-serif; border:0; padding:20px 35px; letter-spacing:2px;}
 .footer{background:#fff; padding:70px 0 0; text-align:center;}
 .footer h3{font:400 18px/18px "sweet_sans_probold", sans-serif; color:#3d3a37; letter-spacing:2px; margin-top:50px;}
-.footer p{font:400 15px/24px "sweet-sans-pro", sans-serif; color:#3d3a37; letter-spacing:2px; opacity:.9; padding:0; margin:0;}
+.footer p{font:400 15px/24px "sweet-sans-pro", sans-serif; color:#3d3a37; letter-spacing:2px; opacity:.9; padding:0; margin:0; font-variant-numeric: lining-nums;}
 .footer a{color:#3d3a37;}
 .copyright{background:#b9ac31; color:#fff; padding:20px 0; margin-top:80px; font:300 15px/18px "halyard-text", sans-serif;}
 .copyright a{color:#fff; display:inline-block; padding:0 8px;} .copyright a:hover{color:#494204;}
@@ -153,7 +153,7 @@ ul.feature li h3 span{display:block;}
 .eyeExam-hero .banner{min-height:600px;}
 .eyeExam-hero .banner::before{display:none;}
 .eyeExam-hero .banner h1{color:#3d3a37; padding-bottom:15px;}
-.eyeExam-hero .banner h2{font:300 27px/32px "halyard-text", sans-serif; color: #3d3a37;}
+.eyeExam-hero .banner h2{font:300 20px/36px "halyard-text", sans-serif; color: #3d3a37;}
 .eyeExam-hero .banner h2 span{display:block;}
 .childSec{background:#faede4 url(../images/for-children.jpg) no-repeat 0 0; padding:90px 0;}
 .adultSec{background:#e0e8eb url(../images/for-adult.jpg) no-repeat right 0;}
@@ -169,14 +169,15 @@ ul.feature li h3 span{display:block;}
 .content p{font-size:18px; padding-bottom:10px;}
 .phone{font:500 15px/20px "halyard-text", sans-serif; color: #82A3AE; text-transform:uppercase; letter-spacing:2px;}
 
-@media only screen and (max-width: 3000px) { .hero h2{margin-bottom:90%;} .eyeExam-hero{background-size:cover; padding-bottom:200px;}
-@media only screen and (max-width: 2000px) { .hero h2{margin-bottom:45%;} }
-@media only screen and (max-width: 1850px) { .hero h2{margin-bottom:33%;} .eyeExam-hero{padding-bottom:100px;}}
-@media only screen and (max-width: 1700px) { .hero h2{margin-bottom:25%;} .eyeExam-hero{padding-bottom:50px;}}
-@media only screen and (max-width: 1600px) { .hero h2{margin-bottom:15%;} }
-@media only screen and (max-width: 1500px) { .hero h2{margin-bottom:10%;} .eyeExam-hero{padding-bottom:0px; background-size:inherit;}}
-@media only screen and (max-width: 1400px) { .hero h2{margin-bottom:0%;} }
-@media only screen and (max-width: 1230px) { .nav ul li a{padding:10px 12px} .childSec{background-size:50%;}}
+@media only screen and (max-width: 3000px) { .hero h2{margin-bottom:90%;} .eyeExam-hero{background-size:cover; padding-bottom:350px;} 
+.nav ul li a{display:block; padding:10px 60px;}}
+@media only screen and (max-width: 2000px) { .hero h2{margin-bottom:45%;} .eyeExam-hero{padding-bottom:250px;}}
+@media only screen and (max-width: 1850px) { .hero h2{margin-bottom:33%;} .eyeExam-hero{padding-bottom:180px;} .nav ul li a{display:block; padding:10px 45px;}}
+@media only screen and (max-width: 1700px) { .hero h2{margin-bottom:25%;} .eyeExam-hero{padding-bottom:100px;}}
+@media only screen and (max-width: 1600px) { .hero h2{margin-bottom:15%;} .nav ul li a{display:block; padding:10px 35px;}}
+@media only screen and (max-width: 1500px) { .hero h2{margin-bottom:10%;} .eyeExam-hero{padding-bottom:20px; background-size:inherit;} .nav ul li a{display:block; padding:10px 30px;}}
+@media only screen and (max-width: 1400px) { .hero h2{margin-bottom:0%;} .nav ul li a{display:block; padding:10px 20px; } }
+@media only screen and (max-width: 1230px) { .nav ul li a{padding:10px 12px} .childSec{background-size:50%;} .eyeExam-hero{padding-bottom:0;}}
 @media only screen and (max-width: 1100px) { .nav ul li a{padding:10px 8px} }
 @media only screen and (max-width: 1024px) {
 .header{padding:20px 0;}
@@ -232,7 +233,7 @@ ul.feature li h3 span{display:inline;}
 .hero h2 span{display:inline;}
 .hero h1, .eyeExam-hero .banner h1{font-size:45px; line-height:45px;}
 .hero{min-height:700px;}
-.hero h2, .eyeExam-hero .banner h2{font-size:22px; line-height:32px; padding-bottom:20px;}
+.hero h2, .eyeExam-hero .banner h2{font-size:20px; line-height:36px; padding-bottom:20px;}
 .modal-content{text-align:center;}
 .modal-content p{text-align:left;}
 .modal-content h4{font-size:30px; line-height:inherit; padding-top:20px;}
@@ -291,10 +292,10 @@ ul.feature{padding-bottom:0;}
 .hero{min-height:450px;}
 .banner h1{font-size:50px;}
 .hero h1, .eyeExam-hero .banner h1{font-size:32px; line-height:38px; padding-bottom:20px;}
-.hero h2, .eyeExam-hero .banner h2{font-size:20px; line-height:26px;}
+.hero h2, .eyeExam-hero .banner h2{font-size:16px; line-height:26px;}
 .common p{font-size:16px; line-height:26px;}
 .row1{padding-bottom:0;} .row2{padding-top:10px;}
-.footer p a{font-size:14px;word-wrap: break-word;}
+.footer p a, .footer p{font-size:12px;word-wrap: break-word; line-height:20px;}
 .services{padding-bottom:180px;}
 .aboutSec{padding-bottom:120px;}
 .banner{min-height:200px;}

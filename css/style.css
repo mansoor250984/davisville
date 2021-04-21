@@ -44,6 +44,8 @@ body{background:#fff; font:300 18px/24px "halyard-text", sans-serif; color:#5050
 .pinkBg{background-color:#fbf7f6!important;}
 .blueBg{background-color:#e9f0f2!important;}
 .grayBg{background-color:#efefef!important;}
+.darkblueBg{background-color:#a8bfc7!important;}
+.lightBg{background-color:#fcfbfa!important;}
 .common h2{font:300 64px/64px "freight-text-pro", sans-serif; color:#3d3a37; padding-bottom:40px;}
 .common p{font:300 20px/33px "halyard-text", sans-serif; color:#3d3a37; padding-bottom:20px;}
 .row1 h2, .row2 h2{padding-top:50px;}
@@ -77,6 +79,8 @@ ul.feature li .iconx.icon5::after{background:url(../images/icon05.svg) no-repeat
 ul.feature li h3{font:500 22px/26px "halyard-text", sans-serif; color:#3d3a37; padding:0;}
 ul.feature li h3 span{display:block;}
 .btn-secondary{background:#83a3af; border-radius:100px; font:500 15px/20px "halyard-text", sans-serif; border:0; padding:20px 35px; letter-spacing:2px;}
+.btn-outline{background:none; border:2px solid #83a3af; color:#83a3af;  border-radius:100px; font:500 14px/20px "halyard-text", sans-serif; padding:17px 25px; letter-spacing:2px;}
+.btn-white{background:#fff; color:#83a3af;}
 .footer{background:#fff; padding:70px 0 0; text-align:center;}
 .footer h3{font:400 18px/18px "sweet_sans_probold", sans-serif; color:#3d3a37; letter-spacing:2px; margin-top:50px;}
 .footer p{font:400 15px/24px "sweet-sans-pro", sans-serif; color:#3d3a37; letter-spacing:2px; opacity:.9; padding:0; margin:0; font-variant-numeric: lining-nums;}
@@ -99,7 +103,7 @@ ul.feature li h3 span{display:block;}
 .aboutSec h2{padding-top:0;}
 .inner-page .teamSec{padding:90px 0;}
 .inner-page .teamSec h2{padding-bottom:80px;}
-
+.md-accordion .card{background:transparent;}
 .md-accordion .card .card-header a .rotate-icon{font-family:sans-serif; display:block; font-style:normal; font-size:30px; line-height:30px;position:relative; float:right; color:#c5ba55;}
 .md-accordion .card .card-header a .rotate-icon .minus{display:none;}
 .md-accordion .card .card-header a:not(.collapsed) .rotate-icon .minus{display:inline-block;} .md-accordion .card .card-header a:not(.collapsed) .rotate-icon .plus{display:none;}
@@ -149,6 +153,10 @@ ul.feature li h3 span{display:block;}
 .appointmentformSec{padding:30px 0 100px;}
 .appointmentformSec .contactDet{padding:0 0 0;}
 .eyeExam-hero{background:url(../images/eye-exams-banner.jpg) no-repeat center bottom;}
+.visionCare-hero{background-image:url(../images/vision-care-banner.jpg)!important; background-color:#fcf8f4!important;}
+.visionTherapy-hero{background-image:url(../images/vision-therapy-banner.jpg)!important; background-color:#fff!important;}
+.forKids-hero{background-image:url(../images/for-kids-banner.jpg)!important; background-color:#f5f2ef!important;}
+.forAdults-hero{background-image:url(../images/for-adults-banner.jpg)!important; background-color:#fbfbf5!important;}
 .eyeExam-hero .header{background:transparent;}
 .eyeExam-hero .banner{min-height:600px;}
 .eyeExam-hero .banner::before{display:none;}
@@ -158,10 +166,26 @@ ul.feature li h3 span{display:block;}
 .childSec{background:#faede4 url(../images/for-children.jpg) no-repeat 0 0; padding:90px 0;}
 .adultSec{background:#e0e8eb url(../images/for-adult.jpg) no-repeat right 0;}
 .seniorSec{background:#f8f6f4 url(../images/for-senior.jpg) no-repeat 0 0;}
-
+.ocularDiseaseSec{background:#edeacc url(../images/ocular-disease.jpg) no-repeat 0 0;}
+.emergencyEyecareSec{background:#edf1f3 url(../images/emergency-eye-care.jpg) no-repeat right center;}
+.frameFittingSec{background:#faede4 url(../images/frame-fitting.jpg) no-repeat 0 0;}
+.lensFittingSec{background:#edeacc url(../images/lens-fitting.jpg) no-repeat right 0;}
+.laserVisionSec{background:#f6f4f1 url(../images/laser-vision.jpg) no-repeat 0 0;}
+.brainInjurySec{background:#faede4 url(../images/brain-injury.jpg) no-repeat 0 0;}
+.sportsVisionSec{background:#edf1f3 url(../images/sports-vision.jpg) no-repeat right 0;}
+.primitiveReflexesSec{background:#edeacc url(../images/primitive-reflexes.jpg) no-repeat 0 0;}
+.lazyEyeSec{background:#faede4 url(../images/lazy-eye.jpg) no-repeat right 0;}
+.visionLearningSec{background:#edf1f3 url(../images/vision-learning.jpg) no-repeat 0 0;}
+.eyeExamskidsSec{background:#ead5c4 url(../images/eye-exams-kids.jpg) no-repeat right 0;}
+.eyeExamsAdultsSec{background:#f1efd6 url(../images/for-adult.jpg) no-repeat 0 0;}
+.eyeExamsSeniorsSec{background:#f0f4f5 url(../images/for-senior.jpg) no-repeat right 0;}
+.visionLearningSec, .lazyEyeSec, .primitiveReflexesSec, .sportsVisionSec, .brainInjurySec{min-height:680px;}
 .collapsible {cursor: pointer; width: 100%; border: none;text-align: left;outline: none; font:500 18px/22px "halyard-text", sans-serif; border-top:1px solid #e8b38f; padding:20px 5px; margin:0; text-transform:uppercase;}
 .adultSec .collapsible{border-color:#adc3ca;}
 .seniorSec .collapsible{border-color:#e1d7cf;}
+.ocularDiseaseSec .collapsible{border-color:#A88D76;}
+.lensFittingSec .collapsible{border-color:#cecbab;}
+.laserVisionSec .collapsible{border-color:#82A3AE;}
 .accordion-collapsible .active, .collapsible:hover {color:#D8854B;}
 .collapsible:after {content: '\002B';font-weight: normal;float: right; margin-left: 5px; font-size:30px; line-height:18px; }
 .accordion-collapsible .active:after {content: "\2212";}
@@ -169,6 +193,47 @@ ul.feature li h3 span{display:block;}
 .content p{font-size:18px; padding-bottom:10px;}
 .phone{font:500 15px/20px "halyard-text", sans-serif; color: #82A3AE; text-transform:uppercase; letter-spacing:2px;}
 
+
+/*=====================Horizontal Accordion================*/
+.accordions {display: flex; flex-wrap:wrap;/*min-height: 100vh;*/background-color: #f0efef;line-height: 0;  overflow:hidden; max-width:100%;}
+.accordions-cell {position: relative;transition-property: width;transition-duration: 250ms;}
+.accordions-cell:nth-child(1) {background: #fefaf8;}
+.accordions-cell:nth-child(2) {background: #f0f4f5;}
+.accordions-cell:nth-child(3) {background: #fbf3ed;}
+.accordions-cell:nth-child(4) {background: #fcfbfa;}
+.accordions-cell:nth-child(5) {background: #f8f7ea;}
+.accordions-cell:nth-child(6) {background: #f0efef;}
+.accordions-cell:nth-child(7) {background: #f0f4f5;}
+.accordions-cell:nth-child(8) {background: #fbf3ed;}
+.accordions-cell:nth-child(9) {background: #fcfbfa;}
+
+
+.accordions-cell > h4 {position: absolute; white-space: nowrap;margin: 0;padding:30px 85px 0 0px;left:0px;top: 0;text-align: center;color: #000;transform: translateX(-100%) rotate(-90deg); -webkit-backface-visibility: hidden; transform-origin:right top;transition-duration: 250ms;font:400 28px/28px "halyard-text", sans-serif; letter-spacing:1px; display:flex;}
+.accordions-cell > h4::after{display:block; font-size:14px; line-height:20px; position:absolute; top:0; right:0;transform: rotate(90deg);  padding:0 0 1px 4.5rem;}
+.accordions-cell:nth-child(1) > h4::after{content:"01";} .accordions-cell:nth-child(1) > h4{color:#D8C3B4;}
+.accordions-cell:nth-child(2) > h4::after{content:"02";} .accordions-cell:nth-child(2) > h4{color:#82A3AE;}
+.accordions-cell:nth-child(3) > h4::after{content:"03";} .accordions-cell:nth-child(3) > h4{color:#D8854B;}
+.accordions-cell:nth-child(4) > h4::after{content:"04";} .accordions-cell:nth-child(4) > h4{color:#A88D76;}
+.accordions-cell:nth-child(5) > h4::after{content:"05";} .accordions-cell:nth-child(5) > h4{color:#B9AB30;}
+.accordions-cell:nth-child(6) > h4::after{content:"06";} .accordions-cell:nth-child(6) > h4{color:#B3B3B3;}
+.accordions-cell:nth-child(7) > h4::after{content:"07";} .accordions-cell:nth-child(7) > h4{color:#82A3AE;}
+.accordions-cell:nth-child(8) > h4::after{content:"08";} .accordions-cell:nth-child(8) > h4{color:#D8854B;}
+.accordions-cell:nth-child(9) > h4::after{content:"09";} .accordions-cell:nth-child(9) > h4{color:#A88D76;}
+
+.accordions-cell > .accordions-cell-content {display: block;width: 65vw;min-height: 80vh;margin: 0;padding: 5rem 0rem 4rem 9rem;opacity: 0;transition-property: opacity;transition-duration: 250ms;overflow: hidden; transition:all 250ms ease-out 0s;}
+
+.accordions-cell-content  p {margin-top:35px;}
+.accordions-cell-content p:last-child{margin-top:0;}
+.accordions .expanded, .accordions .active{width: 65vw;/*pointer-events:none!important;*/}
+.expanded > .accordions-cell-content {opacity: 1;transition-property: opacity;transition-duration: 250ms; }
+.accordions .collapsed {width: 6.75vw; cursor:pointer;}
+.accordions-cell-content a{pointer-events:auto!important;}
+.accordions-cell-content{pointer-events: none!important;}
+.accordions-cell-content h5{text-transform:uppercase; font-size:15px; color:#3C3936; letter-spacing:1px; font-weight:500; padding-bottom:15px;}
+.accordions .expanded h4{opacity:.5;}
+
+.accordions-adults .accordions-cell > .accordions-cell-content, .accordions.accordions-adults .expanded{width:44.6vw;}
+.accordions-adults{background-color:#fcfbfa;}
 @media only screen and (max-width: 3000px) { .hero h2{margin-bottom:90%;} .eyeExam-hero{background-size:cover; padding-bottom:350px;} 
 .nav ul li a{display:block; padding:10px 60px;}}
 @media only screen and (max-width: 2000px) { .hero h2{margin-bottom:45%;} .eyeExam-hero{padding-bottom:250px;}}
@@ -247,6 +312,8 @@ ul.feature li h3 span{display:inline;}
 .appointmentform .width70{width:100%;}
 .days, .times{padding-left:0; min-width:100%;}
 .row2 .col-lg-6:first-child{padding-left:15px;}
+.visionLearningSec, .lazyEyeSec, .primitiveReflexesSec, .sportsVisionSec, .brainInjurySec{min-height:inherit;}
+.visionTherapy-hero .fa-bars{color:#333;}
 }
 @media only screen and (max-width: 767px) {
 .faqSec{padding:70px 0;}
@@ -258,6 +325,18 @@ ul.feature li .iconx{margin-bottom:10px;}
 ul.feature{padding-bottom:0;}
 .eyeExam-hero .banner{min-height:400px;}
 .eyeExam-hero .banner h2 span{display:inline;}
+
+.accordions{display:block;}
+.accordions-cell{width:100%!important;}
+.accordions-cell > .accordions-cell-content{min-height:inherit!important; width:100%!important; display:none;}
+.accordions-cell.expanded .accordions-cell-content{display:block;}
+.accordions-cell > h4{position:static; transform: rotate(0); padding:10px 0 10px 60px; font-size:20px; border-bottom:1px solid #fff; margin-top:1px;}
+.accordions-cell > h4::after{position:absolute; left:30px; top:15px; right:auto;transform: rotate(0); padding:0 0 0 0;}
+.accordions-cell.expanded h4{padding-top:35px; border:0;}
+.accordions-cell.expanded h4::after{top:40px;}
+.accordions-cell > .accordions-cell-content{padding:30px;}
+.accordions-cell.expanded h4::before{content:"\2212"; position:absolute; display:block; right:20px; top:35px; font-size:30px;}
+.accordions-cell.collapsed h4::before{content:'\002B'; position:absolute; display:block; right:20px; top:10px; font-size:30px;}
 }
 @media only screen and (max-width: 668px) {
 .hero{min-height:650px;}
@@ -287,9 +366,11 @@ ul.feature{padding-bottom:0;}
 .hero{min-height:550px;}
 .eyeExam-hero{background-position:50% bottom; background-size:150%; background-color:#f4f2f3;}
 .eyeExam-hero .banner{min-height:inherit; padding:30px 30% 30px 0;}
+.forAdults-hero .fa-bars, .visionCare-hero .fa-bars, .visionTherapy-hero .fa-bars{color:#333;}
 }
 @media only screen and (max-width: 480px) {
 .eyeExam-hero .fa-bars{color:#333;}
+.btn-outline{padding:17px 15px;}
 }
 @media only screen and (max-width: 420px) {
 .hero{min-height:450px;}

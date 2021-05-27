@@ -89,7 +89,10 @@ ul.feature li h3 span{display:block;}
 .copyright a{color:#fff; display:inline-block; padding:0 8px;} .copyright a:hover{color:#494204;}
 .copyright .fa{font-size:24px;}
 .social{vertical-align:middle;}
-
+.social .fa-google-business::after{content:""; display:block; background:url(../images/google-business.svg) no-repeat 0 0; width:27px; height:27px; background-size:100%; color:#fff;
+  filter: invert(100%) sepia(11%) saturate(2878%) hue-rotate(346deg) brightness(204%) contrast(97%); position:absolute; top:0px;}
+ .social .fa-google-business{width:24px;}
+.social .fa-google-business:hover::after{filter: invert(6%) sepia(11%) saturate(2878%) hue-rotate(346deg) brightness(204%) contrast(97%);}
 .menu-bar {display: none;float: right;margin:0px 0px 0;z-index: 9999;}
 .fa-bars {cursor: pointer;display: none;padding: 10px 12px;}
 .overlay{width:100%; position:fixed;background:rgba(0,0,0,.7); height:100%; right:0px; top:0px; display:none; z-index:1;}
@@ -196,7 +199,7 @@ ul.feature li h3 span{display:block;}
 
 /*=====================Horizontal Accordion================*/
 .accordions {display: flex; flex-wrap:wrap;/*min-height: 100vh;*/background-color: #f0efef;line-height: 0;  overflow:hidden; max-width:100%;}
-.accordions-cell {position: relative;transition-property: width;transition-duration: 250ms;}
+.accordions-cell {position: relative;transition-property: width; transition-duration: 250ms;}
 .accordions-cell:nth-child(1) {background: #fefaf8;}
 .accordions-cell:nth-child(2) {background: #f0f4f5;}
 .accordions-cell:nth-child(3) {background: #fbf3ed;}
@@ -204,9 +207,9 @@ ul.feature li h3 span{display:block;}
 .accordions-cell:nth-child(5) {background: #f8f7ea;}
 .accordions-cell:nth-child(6) {background: #f0efef;}
 .accordions-cell:nth-child(7) {background: #f0f4f5;}
-.accordions-cell:nth-child(8) {background: #fbf3ed;}
-.accordions-cell:nth-child(9) {background: #fcfbfa;}
-
+.accordions-cell:nth-child(8) {background: #fcfbfa;}
+.accordions-cell:nth-child(9) {background: #f8f7ea;}
+.accordions-cell:nth-child(10) {background: #f0efef;}
 
 .accordions-cell > h4 {position: absolute; white-space: nowrap;margin: 0;padding:30px 85px 0 0px;left:0px;top: 0;text-align: center;color: #000;transform: translateX(-100%) rotate(-90deg); -webkit-backface-visibility: hidden; transform-origin:right top;transition-duration: 250ms;font:400 28px/28px "halyard-text", sans-serif; letter-spacing:1px; display:flex;}
 .accordions-cell > h4::after{display:block; font-size:14px; line-height:20px; position:absolute; top:0; right:0;transform: rotate(90deg);  padding:0 0 1px 4.5rem;}
@@ -216,23 +219,25 @@ ul.feature li h3 span{display:block;}
 .accordions-cell:nth-child(4) > h4::after{content:"04";} .accordions-cell:nth-child(4) > h4{color:#A88D76;}
 .accordions-cell:nth-child(5) > h4::after{content:"05";} .accordions-cell:nth-child(5) > h4{color:#B9AB30;}
 .accordions-cell:nth-child(6) > h4::after{content:"06";} .accordions-cell:nth-child(6) > h4{color:#B3B3B3;}
-.accordions-cell:nth-child(7) > h4::after{content:"07";} .accordions-cell:nth-child(7) > h4{color:#82A3AE;}
-.accordions-cell:nth-child(8) > h4::after{content:"08";} .accordions-cell:nth-child(8) > h4{color:#D8854B;}
-.accordions-cell:nth-child(9) > h4::after{content:"09";} .accordions-cell:nth-child(9) > h4{color:#A88D76;}
+.accordions-cell:nth-child(8) > h4::after{content:"08";} .accordions-cell:nth-child(7) > h4{color:#82A3AE;}
+.accordions-cell:nth-child(7) > h4::after{content:"07";} .accordions-cell:nth-child(8) > h4{color:#82A3AE;}
+.accordions-cell:nth-child(9) > h4::after{content:"09";} .accordions-cell:nth-child(9) > h4{color:#B9AB30;}
+.accordions-cell:nth-child(10) > h4::after{content:"10";} .accordions-cell:nth-child(10) > h4{color:#B3B3B3;}
 
-.accordions-cell > .accordions-cell-content {display: block;width: 65vw;min-height: 80vh;margin: 0;padding: 5rem 0rem 4rem 9rem;opacity: 0;transition-property: opacity;transition-duration: 250ms;overflow: hidden; transition:all 250ms ease-out 0s;}
+.accordions-cell > .accordions-cell-content {display: block;width: 65vw;min-height: 80vh;margin: 0;padding: 5rem 0rem 4rem 9rem;opacity: 0;transition-property: opacity;transition-duration: 250ms;overflow: hidden; }
 
 .accordions-cell-content  p {margin-top:35px;}
 .accordions-cell-content p:last-child{margin-top:0;}
-.accordions .expanded, .accordions .active{width: 65vw;/*pointer-events:none!important;*/}
-.expanded > .accordions-cell-content {opacity: 1;transition-property: opacity;transition-duration: 250ms; }
+.accordions .expanded, .accordions .active{width: 58.2vw;/*pointer-events:none!important;*/}
+.expanded > .accordions-cell-content {opacity: 1;transition-property: opacity;transition-duration: 250ms; transition:all 250ms ease-out 0s;}
 .accordions .collapsed {width: 6.75vw; cursor:pointer;}
 .accordions-cell-content a{pointer-events:auto!important;}
 .accordions-cell-content{pointer-events: none!important;}
 .accordions-cell-content h5{text-transform:uppercase; font-size:15px; color:#3C3936; letter-spacing:1px; font-weight:500; padding-bottom:15px;}
+.accordions-cell-content h2{font-size:52px; line-height:52px;}
 .accordions .expanded h4{opacity:.5;}
 
-.accordions-adults .accordions-cell > .accordions-cell-content, .accordions.accordions-adults .expanded{width:44.6vw;}
+.accordions-adults .accordions-cell > .accordions-cell-content, .accordions.accordions-adults .expanded{width:37.9vw;}
 .accordions-adults{background-color:#fcfbfa;}
 @media only screen and (max-width: 3000px) { .hero h2{margin-bottom:90%;} .eyeExam-hero{background-size:cover; padding-bottom:350px;} 
 .nav ul li a{display:block; padding:10px 60px;}}
@@ -241,7 +246,7 @@ ul.feature li h3 span{display:block;}
 @media only screen and (max-width: 1700px) { .hero h2{margin-bottom:25%;} .eyeExam-hero{padding-bottom:100px;}}
 @media only screen and (max-width: 1600px) { .hero h2{margin-bottom:15%;} .nav ul li a{display:block; padding:10px 35px;}}
 @media only screen and (max-width: 1500px) { .hero h2{margin-bottom:10%;} .eyeExam-hero{padding-bottom:20px; background-size:inherit;} .nav ul li a{display:block; padding:10px 30px;}}
-@media only screen and (max-width: 1400px) { .hero h2{margin-bottom:0%;} .nav ul li a{display:block; padding:10px 20px; } }
+@media only screen and (max-width: 1400px) { .hero h2{margin-bottom:0%;} .nav ul li a{display:block; padding:10px 25px; } }
 @media only screen and (max-width: 1230px) { .nav ul li a{padding:10px 12px} .childSec{background-size:50%;} .eyeExam-hero{padding-bottom:0;} .childSec{background-size:47%;}}
 @media only screen and (max-width: 1200px) { .container{padding-left:5%; padding-right:5%;} }
 @media only screen and (max-width: 1100px) { .nav ul li a{padding:10px 8px} }
@@ -277,6 +282,18 @@ ul.feature li h3 span{display:block;}
 .inner-page .header{padding:20px 0;}
 .appointmentform .width70{width:85%;}
 .childSec{padding:50px 0;}
+
+.accordions{display:block;}
+.accordions-cell{width:100%!important;}
+.accordions-cell > .accordions-cell-content{min-height:inherit!important; width:100%!important; display:none;}
+.accordions-cell.expanded .accordions-cell-content{display:block;}
+.accordions-cell > h4{position:static; transform: rotate(0); padding:10px 0 10px 60px; font-size:20px; border-bottom:1px solid #fff; margin-top:1px;}
+.accordions-cell > h4::after{position:absolute; left:30px; top:15px; right:auto;transform: rotate(0); padding:0 0 0 0;}
+.accordions-cell.expanded h4{padding-top:35px; border:0;}
+.accordions-cell.expanded h4::after{top:40px;}
+.accordions-cell > .accordions-cell-content{padding:30px;}
+.accordions-cell.expanded h4::before{content:"\2212"; position:absolute; display:block; right:20px; top:35px; font-size:30px;}
+.accordions-cell.collapsed h4::before{content:'\002B'; position:absolute; display:block; right:20px; top:10px; font-size:30px;}
 }
 @media only screen and (max-width: 991px) {
 .container{padding-left:30px; padding-right:30px;} 
@@ -326,17 +343,6 @@ ul.feature{padding-bottom:0;}
 .eyeExam-hero .banner{min-height:400px;}
 .eyeExam-hero .banner h2 span{display:inline;}
 
-.accordions{display:block;}
-.accordions-cell{width:100%!important;}
-.accordions-cell > .accordions-cell-content{min-height:inherit!important; width:100%!important; display:none;}
-.accordions-cell.expanded .accordions-cell-content{display:block;}
-.accordions-cell > h4{position:static; transform: rotate(0); padding:10px 0 10px 60px; font-size:20px; border-bottom:1px solid #fff; margin-top:1px;}
-.accordions-cell > h4::after{position:absolute; left:30px; top:15px; right:auto;transform: rotate(0); padding:0 0 0 0;}
-.accordions-cell.expanded h4{padding-top:35px; border:0;}
-.accordions-cell.expanded h4::after{top:40px;}
-.accordions-cell > .accordions-cell-content{padding:30px;}
-.accordions-cell.expanded h4::before{content:"\2212"; position:absolute; display:block; right:20px; top:35px; font-size:30px;}
-.accordions-cell.collapsed h4::before{content:'\002B'; position:absolute; display:block; right:20px; top:10px; font-size:30px;}
 }
 @media only screen and (max-width: 668px) {
 .hero{min-height:650px;}
@@ -367,6 +373,7 @@ ul.feature{padding-bottom:0;}
 .eyeExam-hero{background-position:50% bottom; background-size:150%; background-color:#f4f2f3;}
 .eyeExam-hero .banner{min-height:inherit; padding:30px 30% 30px 0;}
 .forAdults-hero .fa-bars, .visionCare-hero .fa-bars, .visionTherapy-hero .fa-bars{color:#333;}
+.accordions-cell > .accordions-cell-content{padding:30px 20px;}
 }
 @media only screen and (max-width: 480px) {
 .eyeExam-hero .fa-bars{color:#333;}

@@ -35,7 +35,7 @@ body{background:#fff; font:300 18px/24px "halyard-text", sans-serif; color:#5050
 .nav ul li{display:inline-block; padding-top:0px; vertical-align:middle;}
 .nav ul li a{display:block; padding:10px 20px; font-size:15.5px; color:#3d3a37; font-weight:300; position:relative; line-height:20px;}
 .nav ul li.active a{text-transform:uppercase; font-size:13px;}
-.nav ul li.active a{text-decoration:none; color:#fff; background:#3e3a37;} .nav ul li a:hover{text-decoration:none; color:#fff; background:#b9ac31;}
+.nav ul li.active a{text-decoration:none; color:#fff; background:#3e3a37;  padding:10px 35px;} .nav ul li a:hover{text-decoration:none; color:#fff; background:#b9ac31;}
 .hero{background:#fbf7f6 url(../images/hero.png) no-repeat center bottom; background-size:100%; padding:70px 0; position:relative;}
 .hero h1{font:300 64px/64px "freight-text-pro", sans-serif; color:#3d3a37; padding-bottom:30px;}
 .hero h2 span{display:block;}
@@ -240,13 +240,13 @@ ul.feature li h3 span{display:block;}
 .accordions-adults .accordions-cell > .accordions-cell-content, .accordions.accordions-adults .expanded{width:37.9vw;}
 .accordions-adults{background-color:#fcfbfa;}
 @media only screen and (max-width: 3000px) { .hero h2{margin-bottom:90%;} .eyeExam-hero{background-size:cover; padding-bottom:350px;} 
-.nav ul li a{display:block; padding:10px 60px;}}
-@media only screen and (max-width: 2000px) { .hero h2{margin-bottom:45%;} .eyeExam-hero{padding-bottom:250px;}}
-@media only screen and (max-width: 1850px) { .hero h2{margin-bottom:33%;} .eyeExam-hero{padding-bottom:180px;} .nav ul li a{display:block; padding:10px 45px;}}
-@media only screen and (max-width: 1700px) { .hero h2{margin-bottom:25%;} .eyeExam-hero{padding-bottom:100px;}}
-@media only screen and (max-width: 1600px) { .hero h2{margin-bottom:15%;} .nav ul li a{display:block; padding:10px 35px;}}
+.nav ul li a{display:block; padding:10px 50px;}}
+@media only screen and (max-width: 2000px) { .hero h2{margin-bottom:45%;} .eyeExam-hero{padding-bottom:250px;} .nav ul li a{padding:10px 40px;}}
+@media only screen and (max-width: 1850px) { .hero h2{margin-bottom:33%;} .eyeExam-hero{padding-bottom:180px;} .nav ul li a{display:block; padding:10px 30px;}}
+@media only screen and (max-width: 1700px) { .hero h2{margin-bottom:25%;} .eyeExam-hero{padding-bottom:100px;} }
+@media only screen and (max-width: 1600px) { .hero h2{margin-bottom:15%;} .nav ul li a{display:block; padding:10px 30px;}}
 @media only screen and (max-width: 1500px) { .hero h2{margin-bottom:10%;} .eyeExam-hero{padding-bottom:20px; background-size:inherit;} .nav ul li a{display:block; padding:10px 30px;}}
-@media only screen and (max-width: 1400px) { .hero h2{margin-bottom:0%;} .nav ul li a{display:block; padding:10px 25px; } }
+@media only screen and (max-width: 1400px) { .hero h2{margin-bottom:0%;} .nav ul li a{display:block; padding:10px 20px; } }
 @media only screen and (max-width: 1230px) { .nav ul li a{padding:10px 12px} .childSec{background-size:50%;} .eyeExam-hero{padding-bottom:0;} .childSec{background-size:47%;}}
 @media only screen and (max-width: 1200px) { .container{padding-left:5%; padding-right:5%;} }
 @media only screen and (max-width: 1100px) { .nav ul li a{padding:10px 8px} }

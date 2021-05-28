@@ -35,7 +35,7 @@ body{background:#fff; font:300 18px/24px "halyard-text", sans-serif; color:#5050
 .nav ul li{display:inline-block; padding-top:0px; vertical-align:middle;}
 .nav ul li a{display:block; padding:10px 20px; font-size:15.5px; color:#3d3a37; font-weight:300; position:relative; line-height:20px;}
 .nav ul li.active a{text-transform:uppercase; font-size:13px;}
-.nav ul li.active a{text-decoration:none; color:#fff; background:#3e3a37;  padding:10px 35px;} .nav ul li a:hover{text-decoration:none; color:#fff; background:#b9ac31;}
+.nav ul li.active a{text-decoration:none; color:#fff; background:#3e3a37;  padding:10px 20px;} .nav ul li a:hover{text-decoration:none; color:#fff; background:#b9ac31;}
 .hero{background:#fbf7f6 url(../images/hero.png) no-repeat center bottom; background-size:100%; padding:70px 0; position:relative;}
 .hero h1{font:300 64px/64px "freight-text-pro", sans-serif; color:#3d3a37; padding-bottom:30px;}
 .hero h2 span{display:block;}
@@ -76,6 +76,11 @@ ul.feature li .iconx.icon2::after{background:url(../images/icon02.svg) no-repeat
 ul.feature li .iconx.icon3::after{background:url(../images/icon03.svg) no-repeat 0 0; display:block; width:145px; height:145px; content:"";}
 ul.feature li .iconx.icon4::after{background:url(../images/icon04.svg) no-repeat 0 20px; display:block; width:165px; height:145px; content:"";}
 ul.feature li .iconx.icon5::after{background:url(../images/icon05.svg) no-repeat 0 20px; display:block; width:145px; height:145px; content:"";}
+
+.service .icon1, .service .icon2{display:block; margin:0 auto; width:150px; height:82px; margin: 0 auto 20px;}
+.service .icon1::after{background:url(../images/lens-service.svg) no-repeat 0 0; display:block; width:150px; height:82px; content:"";}
+.service .icon2::after{background:url(../images/service-package.svg) no-repeat 0 0; display:block; width:150px; height:82px; content:"";}
+.service p{padding-bottom:0; margin-bottom:0;}
 ul.feature li h3{font:500 22px/26px "halyard-text", sans-serif; color:#3d3a37; padding:0;}
 ul.feature li h3 span{display:block;}
 .btn-secondary{background:#83a3af; border-radius:100px; font:500 15px/20px "halyard-text", sans-serif; border:0; padding:20px 35px; letter-spacing:2px;}
@@ -160,6 +165,7 @@ ul.feature li h3 span{display:block;}
 .visionTherapy-hero{background-image:url(../images/vision-therapy-banner.jpg)!important; background-color:#fff!important;}
 .forKids-hero{background-image:url(../images/for-kids-banner.jpg)!important; background-color:#f5f2ef!important;}
 .forAdults-hero{background-image:url(../images/for-adults-banner.jpg)!important; background-color:#fbfbf5!important;}
+.eyewear-hero{background-image:url(../images/eyewear-banner.jpg)!important; background-color:#ebedec!important;}
 .eyeExam-hero .header{background:transparent;}
 .eyeExam-hero .banner{min-height:600px;}
 .eyeExam-hero .banner::before{display:none;}
@@ -182,6 +188,12 @@ ul.feature li h3 span{display:block;}
 .eyeExamskidsSec{background:#ead5c4 url(../images/eye-exams-kids.jpg) no-repeat right 0;}
 .eyeExamsAdultsSec{background:#f1efd6 url(../images/for-adult.jpg) no-repeat 0 0;}
 .eyeExamsSeniorsSec{background:#f0f4f5 url(../images/for-senior.jpg) no-repeat right 0;}
+.framesSec{background:#f5f3e1 url(../images/frames.jpg) no-repeat 0 0;}
+.sunglassesSec{background:#faede4 url(../images/sunglasses.jpg) no-repeat right 0;}
+.lensesSec{background:#edf1f3 url(../images/lenses.jpg) no-repeat 0 0;}
+.contactLensesSec{background:#fbfaf9 url(../images/contact-lenses.jpg) no-repeat right center;}
+.dryEyesSec{background:#edf1f3 url(../images/dry-eyes.jpg) no-repeat 0 center;}
+.graySec{background:#f5f3e1;}
 .visionLearningSec, .lazyEyeSec, .primitiveReflexesSec, .sportsVisionSec, .brainInjurySec{min-height:680px;}
 .collapsible {cursor: pointer; width: 100%; border: none;text-align: left;outline: none; font:500 18px/22px "halyard-text", sans-serif; border-top:1px solid #e8b38f; padding:20px 5px; margin:0; text-transform:uppercase;}
 .adultSec .collapsible{border-color:#adc3ca;}
@@ -195,8 +207,15 @@ ul.feature li h3 span{display:block;}
 .content {padding: 0 5px;max-height: 0;overflow: hidden;transition: max-height 0.2s ease-out;}
 .content p{font-size:18px; padding-bottom:10px;}
 .phone{font:500 15px/20px "halyard-text", sans-serif; color: #82A3AE; text-transform:uppercase; letter-spacing:2px;}
-
-
+.graySec h2{font-size:54px; line-height:54px;}
+#covid .modal-dialog{margin:90px auto 40px;}
+#covid h2{font: 300 54px/54px "freight-text-pro", sans-serif; color: #3d3a37; padding-bottom: 30px;}
+#covid p{font: 300 19px/28px "halyard-text", sans-serif; color: #3d3a37; padding-bottom: 20px; text-align:center;}
+#covid p span{text-transform:uppercase; color:#82A3AE;}
+#covid .modal-content{padding:0px 40px 50px; background:#f3f3f2 url(../images/hospital-graphic-white.png) no-repeat center bottom;}
+.covid-logo{background:#f3f3f2; padding:10px; border-radius:100px; display:block; max-width:160px; margin:-70px auto 0;}
+#covid figure{border-radius:0; max-width:100px; height:inherit;}
+#covid p b{font: 400 19px/28px "halyard-text", sans-serif;}
 /*=====================Horizontal Accordion================*/
 .accordions {display: flex; flex-wrap:wrap;/*min-height: 100vh;*/background-color: #f0efef;line-height: 0;  overflow:hidden; max-width:100%;}
 .accordions-cell {position: relative;transition-property: width; transition-duration: 250ms;}
@@ -240,13 +259,13 @@ ul.feature li h3 span{display:block;}
 .accordions-adults .accordions-cell > .accordions-cell-content, .accordions.accordions-adults .expanded{width:37.9vw;}
 .accordions-adults{background-color:#fcfbfa;}
 @media only screen and (max-width: 3000px) { .hero h2{margin-bottom:90%;} .eyeExam-hero{background-size:cover; padding-bottom:350px;} 
-.nav ul li a{display:block; padding:10px 50px;}}
-@media only screen and (max-width: 2000px) { .hero h2{margin-bottom:45%;} .eyeExam-hero{padding-bottom:250px;} .nav ul li a{padding:10px 40px;}}
-@media only screen and (max-width: 1850px) { .hero h2{margin-bottom:33%;} .eyeExam-hero{padding-bottom:180px;} .nav ul li a{display:block; padding:10px 30px;}}
+.nav ul li a{display:block; padding:10px 60px;}}
+@media only screen and (max-width: 2000px) { .hero h2{margin-bottom:45%;} .eyeExam-hero{padding-bottom:250px;} .nav ul li a{padding:10px 50px;}}
+@media only screen and (max-width: 1850px) { .hero h2{margin-bottom:33%;} .eyeExam-hero{padding-bottom:180px;} .nav ul li a{display:block; padding:10px 40px;}}
 @media only screen and (max-width: 1700px) { .hero h2{margin-bottom:25%;} .eyeExam-hero{padding-bottom:100px;} }
-@media only screen and (max-width: 1600px) { .hero h2{margin-bottom:15%;} .nav ul li a{display:block; padding:10px 30px;}}
+@media only screen and (max-width: 1600px) { .hero h2{margin-bottom:15%;} .nav ul li a{display:block; padding:10px 35px;}}
 @media only screen and (max-width: 1500px) { .hero h2{margin-bottom:10%;} .eyeExam-hero{padding-bottom:20px; background-size:inherit;} .nav ul li a{display:block; padding:10px 30px;}}
-@media only screen and (max-width: 1400px) { .hero h2{margin-bottom:0%;} .nav ul li a{display:block; padding:10px 20px; } }
+@media only screen and (max-width: 1400px) { .hero h2{margin-bottom:0%;} .nav ul li a{display:block; padding:10px 30px; } }
 @media only screen and (max-width: 1230px) { .nav ul li a{padding:10px 12px} .childSec{background-size:50%;} .eyeExam-hero{padding-bottom:0;} .childSec{background-size:47%;}}
 @media only screen and (max-width: 1200px) { .container{padding-left:5%; padding-right:5%;} }
 @media only screen and (max-width: 1100px) { .nav ul li a{padding:10px 8px} }
@@ -294,6 +313,7 @@ ul.feature li h3 span{display:block;}
 .accordions-cell > .accordions-cell-content{padding:30px;}
 .accordions-cell.expanded h4::before{content:"\2212"; position:absolute; display:block; right:20px; top:35px; font-size:30px;}
 .accordions-cell.collapsed h4::before{content:'\002B'; position:absolute; display:block; right:20px; top:10px; font-size:30px;}
+#covid h2{font-size:40px; line-height:40px;}
 }
 @media only screen and (max-width: 991px) {
 .container{padding-left:30px; padding-right:30px;} 
@@ -331,6 +351,9 @@ ul.feature li h3 span{display:inline;}
 .row2 .col-lg-6:first-child{padding-left:15px;}
 .visionLearningSec, .lazyEyeSec, .primitiveReflexesSec, .sportsVisionSec, .brainInjurySec{min-height:inherit;}
 .visionTherapy-hero .fa-bars{color:#333;}
+.service .col-lg-4{margin-top:20px; margin-bottom:20px;}
+.graySec h2{padding-bottom:20px;}
+#covid .width90{width:100%;}
 }
 @media only screen and (max-width: 767px) {
 .faqSec{padding:70px 0;}
@@ -367,6 +390,8 @@ ul.feature{padding-bottom:0;}
 .team li h4{font-size:20px; line-height:inherit;}
 .collapsible{position:relative; padding-right:30px;}
 .collapsible::after{position:absolute; top:20px; right:0;}
+.partner{padding:40px 0;}
+#covid h2{font-size:32px; line-height:38px;}
 }
 @media only screen and (max-width: 575px) {
 .hero{min-height:550px;}
@@ -374,10 +399,12 @@ ul.feature{padding-bottom:0;}
 .eyeExam-hero .banner{min-height:inherit; padding:30px 30% 30px 0;}
 .forAdults-hero .fa-bars, .visionCare-hero .fa-bars, .visionTherapy-hero .fa-bars{color:#333;}
 .accordions-cell > .accordions-cell-content{padding:30px 20px;}
+#covid .modal-dialog{padding-left:20px; padding-right:20px;}
 }
 @media only screen and (max-width: 480px) {
 .eyeExam-hero .fa-bars{color:#333;}
 .btn-outline{padding:17px 15px;}
+#covid .modal-content{padding:0px 10px 50px}
 }
 @media only screen and (max-width: 420px) {
 .hero{min-height:450px;}
@@ -393,6 +420,7 @@ ul.feature{padding-bottom:0;}
 .eyeExam-hero .banner{min-height:inherit;}
 .days li{min-width:31%;}
 .eyeExam-hero{background-position:50% bottom; background-size:170%;}
+.partner img{max-width:45%;}
 }
 @media only screen and (max-width: 375px) {
 .eyeExam-hero{background-position:52% bottom; background-size:190%;}

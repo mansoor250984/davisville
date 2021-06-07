@@ -32,6 +32,16 @@ $('.navigation li a').on('click', function(){
 });
 
 
+
+$(".accordions .cell-1 .accordions-cell-content").click(function(){
+	$(".accordions .cell-2").addClass("expanded");
+	$(".accordions .cell-1").removeClass("expanded");
+});
+$(".accordions").click(function(){
+	$(".accordions .cell-1").addClass("collapsed");
+	$(".learn-btn").css("display", "none");
+});
+
     });
 	
 

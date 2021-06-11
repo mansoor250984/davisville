@@ -154,7 +154,7 @@ ul.feature li h3 span{display:block;}
 .custom-control-label::before, .custom-control-label::after{left:0; width:28px; height:28px; }
 .custom-checkbox .custom-control-label::before{border-radius:0; border:0;}
 .days{display:inline-block; padding-left:15px;}
-.days li{display:inline-block; padding:0 15px 0 0;}
+.days li{display:inline-block; padding:0 15px 0 0; vertical-align: middle;}
 .appointmentform .label{display:inline-block; font-weight:500; min-width:20%;}
 .times{min-width:75%;}
 .times li{min-width:50%; float:left;}

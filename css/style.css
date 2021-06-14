@@ -247,7 +247,7 @@ ul.feature li h3 span{display:block;}
 
 .accordions-cell > .accordions-cell-content {display: block;width: 65.3vw;min-height: 80vh;margin: 0;padding: 5rem 0rem 4rem 7rem;opacity: 0;transition-property: opacity;transition-duration: 250ms;overflow: hidden; }
 
-.accordions-cell-content  p {margin-top:35px; margin-top:0;}
+.accordions-cell-content  p {margin-top:35px; margin-bottom:0;}
 .accordions-cell-content p:last-child{margin-top:0;}
 .accordions .expanded, .accordions .active{width: 70.2vw;/*pointer-events:none!important;*/}
 .expanded > .accordions-cell-content {opacity: 1;transition-property: opacity;transition-duration: 250ms; transition:all 250ms ease-out 0s;}

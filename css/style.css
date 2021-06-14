@@ -316,7 +316,7 @@ ul.feature li h3 span{display:block;}
 .accordions-cell.expanded h4{padding-top:35px; border:0;}
 .accordions-cell.expanded h4::after{top:40px;}
 .accordions-cell > .accordions-cell-content{padding:30px;}
-.accordions-cell.expanded h4::before{content:"\2212"; position:absolute; display:block; right:20px; top:35px; font-size:30px;}
+.accordions-cell.expanded h4::before, .accordions-cell.expanded.collapsed h4::before{content:"\2212"; position:absolute; display:block; right:20px; top:35px; font-size:30px;}
 .accordions-cell.collapsed h4::before{content:'\002B'; position:absolute; display:block; right:20px; top:10px; font-size:30px;}
 #covid h2{font-size:40px; line-height:40px;}
 .banner h2 span{display:inline!important;}
@@ -411,13 +411,15 @@ ul.feature{padding-bottom:0;}
 .eyeExam-hero{background-position:50% bottom; background-size:150%; background-color:#f4f2f3;}
 .eyeExam-hero .banner{min-height:inherit; padding:30px 30% 30px 0;}
 .forAdults-hero .fa-bars, .visionCare-hero .fa-bars, .visionTherapy-hero .fa-bars{color:#333;}
-.accordions-cell > .accordions-cell-content{padding:30px 20px;}
+.accordions-cell > .accordions-cell-content{padding:30px 30px;}
 #covid .modal-dialog{padding-left:20px; padding-right:20px;}
 }
 @media only screen and (max-width: 480px) {
 .eyeExam-hero .fa-bars{color:#333;}
 .btn-outline{padding:17px 15px;}
 #covid .modal-content{padding:0px 10px 50px}
+.accordions-cell > h4{font-size:17px; padding-left:55px; letter-spacing:0px; word-spacing:-1px;}
+.accordions-cell > h4 span{display:block; padding-right:50px; }
 }
 @media only screen and (max-width: 420px) {
 .hero{min-height:450px;}
